@@ -3,9 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Seeking Interaction</title>
+    <style>
+body{
+  background-color: #EDF0EC;
+  color:#121314;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  color:
+}
+a:hover{
+  color:grey;
+}
+      </style>
   </head>
   <body>
-    <h1><a href="http://www.pewresearch.org/next-america/#The-New-Us">Hello World</a></h1>
-    <p>hello</P>
+    <h1>Seeking Interaction</h1>
+    <h2>I found out this America population<a href="http://www.pewresearch.org/next-america/#The-New-Us">data visualization</a> includes almost everything about the animation and interactions as the reading mentioned.</h2>
+    <h2>Animation</h2>
+    <h3>It has an animation which changes the population chart period by period. The whole animation starts in 1950 and ends at 2060 with every 5-year changes. And you can click the Animation control which is below the chart to pause or resume the whole animation.</h3>
+    <h2>Interaction</h2>
+    <h3>Users can hover their mouse to the specific bar to view the percentange of male and female population at corresponding age group.</h3>
+    <h2>How to implement</h2>
+    <h3>To enable the contiunous animation like that:
+      <br/>
+        <br/> I will create a object to store the information for specific year and store that object into an array. The code will be a for loop that go through the array to get the dataset and generate the animation. I need the <code>.transition( ), .delay( ), and .duration( )</code> in d3 to help me create the smooth animation effect. The barwidth should also change at each time we apply new dataset to the chart.
+        <br/>
+        <br/>To enable the Interaction like that:
+        <br/>
+        <br/> I will use Tooltips to implement the interaction. To have the effect like the population chart, we probably need to use the HTML div Tooltips. We will create the div first with initial information in HTML page first and apply <code>.on("mouseover", function(d) {</code> and <code>.on("mouseout", function() {</code>. Inside <code>.on("mouseover", function(d) {</code>, we will change the position and data information of the div and show the Tooltips. For <code>.on("mouseout", function() {</code>, we will hide the Tooltips.
+     </h3>
   </body>
 </html>
