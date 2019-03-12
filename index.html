@@ -10,23 +10,30 @@ body{
 }
 h1 {
   text-align: center;
+  color:#3A332F;
 }
-h2 {
-  color:
+h3 {
+  color:#0D0101;
+}
+.title {
+  color:#413F3F;
 }
 a:hover{
   color:grey;
+}
+code{
+  color:#8B8C6D;
 }
       </style>
   </head>
   <body>
     <h1>Seeking Interaction</h1>
     <h2>I found out this America population <a href="http://www.pewresearch.org/next-america/#The-New-Us">data visualization</a> includes almost everything about the animation and interactions as the reading mentioned.</h2>
-    <h2>Animation</h2>
+    <h2 class="title">Animation</h2>
     <h3>It has an animation which changes the population chart period by period. The whole animation starts in 1950 and ends at 2060 with every 5-year changes. And you can click the Animation control which is below the chart to pause or resume the whole animation.</h3>
-    <h2>Interaction</h2>
+    <h2 class="title">Interaction</h2>
     <h3>Users can hover their mouse to the specific bar to view the percentange of male and female population at corresponding age group.</h3>
-    <h2>How to implement</h2>
+    <h2 class="title">How to implement</h2>
     <h3>To enable the contiunous animation like that:
       <br/>
         <br/> I will create a object to store the information for specific year and store that object into an array. The code will be a for loop that go through the array to get the dataset and generate the animation. I need the <code>.transition( ), .delay( ), and .duration( )</code> in d3 to help me create the smooth animation effect. The barwidth should also change at each time we apply new dataset to the chart.
